@@ -36,5 +36,11 @@ In order for these changes to take effect, you must execute the following:
 ```
 sudo ./flash.sh -r -k kernel-dtb jetson-tx2 mmcblk0p1
 ```
-Then, copy the Image and zImage into the `\boot` folder on the TX2. Finally, copy the kernel-modules into the folder from the TX2  
+Then, copy the Image and zImage into the `\boot` folder on the TX2. Finally, copy the kernel-modules into the `/lib/modules` folder on the TX2  
 TODO ^ elaborate on previous
+
+
+## Kernel Modules ##
+Note that these are not handled by the files in this repo. Note that we use the following additional modules (which will likely require you to recompile the kernel onboard using (buildTX2Kernel)[https://github.com/jetsonhacks/buildJetsonTX2Kernel]):
+- `mttcan`
+- ???
