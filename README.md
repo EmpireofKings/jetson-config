@@ -1,5 +1,5 @@
 # jetson-config
-Jetson configuration files for the Stanford Mars Rover
+Jetson configuration files for the Stanford Mars Rover. In general, most changes will be made by running the flash script (in the top-level directory of this repo) as follows:
 
 `./flash <profile> mmcblk0p1`
 
@@ -27,7 +27,7 @@ The following files in `64_TX2/Linux_for_tx2/bootloader/t186ref/BCT` were pulled
 - `tegra186-mb1-bct-pmic-quill-p3310-1000-c04.cfg`
 The files are modifications to the Boot Configuration Table (BCT) of the Jetson and also require the Jetson to be re-flashed.
 
-There are also a few changes to the Device Tree Blob (DTB) necessary. The following files in `64_TX2/Linux_for_tx2/kernel/dtb` were pulled from the Auvidea website:
+There are also a few changes to the Device Tree Blob (DTB) necessary. The following files in `64_TX2/Linux_for_tx2/kernel/dtb` were pulled from the [Auvidea firmware page](https://auvidea.com/firmware/):
 - `tegra186-quill-p3310-1000-a00-00-base.dtb`
 - `tegra186-quill-p3310-1000-c03-00-base.dtb`
 - `tegra186-quill-p3310-1000-c03-00-dsi-hdmi-dp.dtb`
