@@ -43,4 +43,5 @@ TODO ^ elaborate on previous
 ## Kernel Modules ##
 Note that these are not handled by the files in this repo. Note that we use the following additional modules (which will likely require you to recompile the kernel onboard using (buildTX2Kernel)[https://github.com/jetsonhacks/buildJetsonTX2Kernel]):
 - `mttcan`
-- ???
+
+We also compile with the option `CONFIG_USB_ACM` (USB Modem (CDC ACM) support).
