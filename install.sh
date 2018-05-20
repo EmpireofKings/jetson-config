@@ -4,7 +4,7 @@ read -p "Download ROS? " -n 1 -r
 echo
 if [[ $REPLY =~ ^[Yy]$ ]]
 then
-    /bin/bash installRos.sh
+    /bin/bash installROS.sh
 fi
 
 read -p "Create catkin workspace? " -n 1 -r
