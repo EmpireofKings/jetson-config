@@ -33,6 +33,8 @@ read -p "Install other ROS packages? " -n 1 -r
 echo
 if [[ $REPLY =~ ^[Yy]$ ]]
 then
-    sudo apt get install -y ros-kinetic-navigation    
+    sudo apt get install -y ros-kinetic-navigation
+    sudo apt get install -y ros-kinetic-gscam ros-kinetic-hugin-panorama
+    sudo apt get install -y gstreamer-0.10-plugins-good
 fi
 
